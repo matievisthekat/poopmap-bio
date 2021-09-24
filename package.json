@@ -1,0 +1,16 @@
+{
+  "name": "poop",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "poop?",
+  "main": "src/index.js",
+  "repository": "https://github.com/matievisthekat/matievisthekat",
+  "author": "Matthew Stead <matievisthekat@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@actions/core": "^1.5.0",
+    "axios": "^0.21.4",
+    "octokit": "^1.6.0"
+  }
+}

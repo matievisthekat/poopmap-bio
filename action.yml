@@ -1,0 +1,25 @@
+name: "PoopMap Bio"
+description: "Show your poops from PoopMap in your bio"
+inputs:
+  personal_access_token: # must include all 'user' scopes
+    description: "A GitHub personal access token (PAT) that includes all 'user' scopes"
+    required: true
+    default: ""
+
+  username:
+    description: "Your PoopMap username"
+    required: true
+    default: ""
+
+  password:
+    description: "Your PoopMap password"
+    required: true
+    default: ""
+
+outputs:
+  poops:
+    description: "The amount of poops in the last 24 hours"
+
+runs:
+  using: "node14"
+  main: "src/index.js"
