@@ -5,6 +5,9 @@ Include your poops from [PoopMap](https://www.poopmap.net) ([Android](https://pl
    <img src="https://i.imgur.com/hVwDcZO.png?1" />
 </p>
 
+### Important Note
+The action automatically keeps your original bio. It will add the poop section in this format: `{your_bio} | {x} poops in the last day` so try not to include pipe symbols (` | `) in your bio
+
 ### Example
 ```yml
 name: PoopMap
