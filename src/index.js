@@ -1,6 +1,6 @@
-import core from "@actions/core";
-import { Octokit } from "octokit";
-import Axios from "axios";
+const core = require("@actions/core");
+const { Octokit } = require("octokit");
+const Axios = require("axios");
 
 try {
   const auth = core.getInput("personal_access_token");
@@ -61,7 +61,7 @@ try {
   fetchToken().then((token) => {
     fetchPoops(token).then(async ({ length }) => {
       core.setOutput(length);
-      
+
       const user = await kit.rest.users.getAuthenticated();
       await kit.request("PATCH /user", {
         bio: `${user.data.bio.split("|")[0].trim()} | ${length} poop${length > 1 ? "s" : ""} 💩 in the last day`,
