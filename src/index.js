@@ -64,7 +64,7 @@ try {
       
       const user = await kit.rest.users.getAuthenticated();
       await kit.request("PATCH /user", {
-        bio: `${user.data.bio.split("|")[0].trim()} | ${length} poop${length > 1 ? "s" : ""} in the last day`,
+        bio: `${user.data.bio.split("|")[0].trim()} | ${length} poop${length > 1 ? "s" : ""} 💩 in the last day`,
       });
     });
   });
