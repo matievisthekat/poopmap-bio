@@ -60,7 +60,7 @@ try {
 
   fetchToken().then((token) => {
     fetchPoops(token).then(async ({ length }) => {
-      core.setOutput(length);
+      // core.setOutput(length);
 
       const user = await kit.rest.users.getAuthenticated();
       await kit.request("PATCH /user", {
