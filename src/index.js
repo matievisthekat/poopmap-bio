@@ -4,7 +4,7 @@ const Axios = require("axios");
 
 try {
   const auth = core.getInput("personal_access_token");
-  const sep = core.getInput("seperator") || "|";
+  const sep = core.getInput("separator") || "|";
   const username = core.getInput("username");
   const password = core.getInput("password");
 
