@@ -61,11 +61,11 @@ try {
 
   fetchToken().then((token) => {
     fetchPoops(token).then(async ({ length }) => {
-      core.setOutput(length);
+      // core.setOutput(length);
 
       const user = await kit.rest.users.getAuthenticated();
       await kit.request("PATCH /user", {
-        bio: `${user.data.bio.split(sep)[0].trim()} ${sep} ${length} poop${length > 1 ? "s" : ""} 💩 in the last day`,
+        bio: `${user.data.bio.split(sep)[0].trim()} ${sep} ${length} poop${length !== 1 ? "s" : ""} 💩 in the last day`,
       });
     });
   });
