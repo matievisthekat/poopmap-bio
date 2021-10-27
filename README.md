@@ -6,7 +6,7 @@ Include your poops from [PoopMap](https://www.poopmap.net) ([Android](https://pl
 </p>
 
 ### Important Note
-The action automatically keeps your original bio. It will add the poop section in this format: `{your_bio} | {x} poops in the last day` so try not to include pipe symbols (` | `) in your bio
+The action automatically keeps your original bio. It will add the poop section in this format: `{your_bio} {seperator} {x} poops in the last day` so try not to include the seperator symbol (default: ` | `) in your bio
 
 ### Example
 ```yml
@@ -33,6 +33,9 @@ jobs:
           
           # Your PoopMap password
           password: ${{ secrets.POOP_PASSWORD }}
+          
+          # Your preferred seperator, default: |
+          seperator: "|"
 ```
 
 ### Notes
