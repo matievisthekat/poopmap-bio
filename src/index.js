@@ -4,6 +4,7 @@ const Axios = require("axios");
 
 try {
   const auth = core.getInput("personal_access_token");
+  const sep = core.getInput("seperator") || "|";
   const username = core.getInput("username");
   const password = core.getInput("password");
 
@@ -64,7 +65,7 @@ try {
 
       const user = await kit.rest.users.getAuthenticated();
       await kit.request("PATCH /user", {
-        bio: `${user.data.bio.split("|")[0].trim()} | ${length} poop${length > 1 ? "s" : ""} 💩 in the last day`,
+        bio: `${user.data.bio.split(sep)[0].trim()} ${sep} ${length} poop${length > 1 ? "s" : ""} 💩 in the last day`,
       });
     });
   });

@@ -3,7 +3,7 @@ description: "Show your poops from PoopMap in your bio"
 branding:
   icon: user-check
   color: gray-dark
-  
+
 inputs:
   personal_access_token: # must include all 'user' scopes
     description: "A GitHub personal access token (PAT) that includes all 'user' scopes"
@@ -19,6 +19,11 @@ inputs:
     description: "Your PoopMap password"
     required: true
     default: ""
+
+  seperator:
+    description: "Your preferred seperator to use in your bio"
+    required: false
+    default: "|"
 
 outputs:
   poops:
