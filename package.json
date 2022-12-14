@@ -10,6 +10,6 @@
   "dependencies": {
     "axios": "^0.27.2",
     "@actions/core": "^1.9.1",
-    "octokit": "^1.8.1"
+    "octokit": "^2.0.10"
   }
 }
