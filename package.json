@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.2.0",
     "@actions/core": "^1.9.1",
     "octokit": "^1.8.1"
   }
