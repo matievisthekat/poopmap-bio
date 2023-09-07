@@ -20,7 +20,7 @@ inputs:
     required: true
     default: ""
 
-  seperator:
+  separator:
     description: "Your preferred seperator to use in your bio"
     required: false
     default: "|"
